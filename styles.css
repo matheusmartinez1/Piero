@@ -8,6 +8,8 @@
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
+    background-color: white;
+    color: red;
 }
 
 .container {
@@ -17,7 +19,7 @@ body {
 }
 
 header {
-    background-color: #FFCC00;
+    background-color: red;
     padding: 20px;
     text-align: center;
 }
@@ -48,18 +50,25 @@ nav ul li {
     height: auto;
 }
 
-/* Estilos para a seção de entrega */
-.delivery-section {
-    padding: 40px 0;
+/* Estilos para botões */
+.buy-button,
+.cart-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
-#cep {
-    margin-right: 10px;
+.buy-button:hover,
+.cart-button:hover {
+    background-color: #990000;
 }
 
 /* Estilos para o rodapé */
 footer {
-    background-color: #333;
+    background-color: red;
     color: white;
     text-align: center;
     padding: 10px;
