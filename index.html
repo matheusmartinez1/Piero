@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>PIERO Pizza Napoletana</title>
+    <title>PIERO Store</title>
 </head>
 <body>
     <header>
-        <h1>PIERO Pizza Napoletana</h1>
+        <h1>PIERO Store</h1>
         <nav>
             <ul>
                 <li><a href="#copos">Copos</a></li>
                 <li><a href="#camisetas">Camisetas</a></li>
                 <li><a href="#canecas">Canecas</a></li>
                 <li><a href="#moletons">Moletons</a></li>
-                <li><a href="#bones">Bonés</a></li>
-                <li><a href="#tacas">Taças</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
             </ul>
         </nav>
     </header>
@@ -25,43 +24,23 @@
         <section id="copos" class="product-category">
             <h2>Copos</h2>
             <div class="product">
-                <p>Produto: Copo Tradicional</p>
-                <p>Descrição: Copo de alta qualidade para você aproveitar sua bebida favorita com estilo.</p>
+                <h3>Copo Tradicional</h3>
+                <p>Copo de alta qualidade para você aproveitar sua bebida favorita com estilo.</p>
                 <p>Preço: R$15,00</p>
-                <button class="buy-button">Comprar Agora</button>
-                <button class="cart-button">Adicionar ao Carrinho</button>
+                <button class="buy-button" data-product="copo1">Comprar Agora</button>
+                <button class="cart-button" data-product="copo1">Adicionar ao Carrinho</button>
             </div>
             <!-- Repetição similar para outros produtos de copos -->
         </section>
 
-        <section id="camisetas" class="product-category">
-            <h2>Camisetas</h2>
-            <div class="product">
-                <p>Produto: Camiseta PIERO</p>
-                <p>Descrição: Camiseta exclusiva com o logotipo PIERO. Mostre sua paixão pela pizza napolitana!</p>
-                <p>Preço: R$30,00</p>
-                <button class="buy-button">Comprar Agora</button>
-                <button class="cart-button">Adicionar ao Carrinho</button>
-            </div>
-            <!-- Repetição similar para outros produtos de camisetas -->
-        </section>
-
         <!-- Repetir seções similares para outras categorias -->
 
-        <section id="entrega" class="delivery-section">
-            <h2>Entrega e Frete</h2>
-            <p>Informe sua localização para calcular o frete:</p>
-            <form id="delivery-form">
-                <label for="cep">CEP:</label>
-                <input type="text" id="cep" placeholder="Digite o CEP">
-                <button type="button" id="calculate-button">Calcular Frete</button>
-                <p id="frete-info"></p>
-            </form>
+        <section id="carrinho" class="cart-section">
+            <h2>Carrinho</h2>
+            <div id="cart-items"></div>
+            <p>Total: <span id="cart-total">R$0,00</span></p>
+            <button id="checkout-button">Finalizar Compra</button>
         </section>
-
-        <footer>
-            <p>&copy; 2023 PIERO Pizza Napoletana. Todos os direitos reservados.</p>
-        </footer>
     </div>
 
     <script src="script.js"></script>
